@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Compile",
+      "setup": "",
+      "run": "cd ./dirTest/project && gcc wcat.c -o wcat",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "1",
+      "setup": "",
+      "run": "cd ./dirTest/project && ./test-wcat.sh -t 1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "2",
+      "setup": "",
+      "run": "cd ./dirTest/project && ./test-wcat.sh -t 2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "3",
+      "setup": "",
+      "run": "cd ./dirTest/project && ./test-wcat.sh -t 3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "4",
+      "setup": "",
+      "run": "cd ./dirTest/project && ./test-wcat.sh -t 4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "5",
+      "setup": "",
+      "run": "cd ./dirTest/project && ./test-wcat.sh -t 5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "6",
+      "setup": "",
+      "run": "cd ./dirTest/project && ./test-wcat.sh -t 6",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7",
+      "setup": "",
+      "run": "cd ./dirTest/project && ./test-wcat.sh -t 7",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
