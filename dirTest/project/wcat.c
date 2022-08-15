@@ -3,21 +3,26 @@
 
 int main(int argc, char *argv[]){
 
-    FILE *fin = fopen(argv[1],"r");
+     for(int i=1;i<argc;i++)
+        {
+        FILE *fin = fopen(argv[i],"r");
 
-    if(fin == NULL){
-        perror("fopen-fin fails: ");
-        exit(EXIT_FAILURE);
-    }
-
-    char buffer[64];
-    char *status = NULL;
-    do{
-        status = fgets(buffer, sizeof(buffer),fin);
-        if(status != NULL){
-            printf("%s",buffer);
+        if(fin == NULL){
+            //perror("fopen-fin fails: ");
+            printf("wcat: cannot open file\n");
+            exit(EXIT_FAILURE);
         }
-    }while(status !=NULL);
-    fclose(fin);
+
+        char buffer[64];
+        char *status = NULL;
+        do{
+            status = fgets(buffer, sizeof(buffer),fin);
+            if(status != NULL){
+                printf("%s",buffer);
+            }
+        }while(status !=NULL);
+        
+        fclose(fin);
+        }
     exit(EXIT_SUCCESS);
 }
